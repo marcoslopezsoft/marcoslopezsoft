@@ -7,22 +7,22 @@ import { useLenis } from 'lenis/react';
 
 const galleryPhotos = [
   {
-    src: '/assets/foto/album/AES_0577.JPG.jpeg', // /assets/foto/album/1.jpeg
+    src: '/assets/foto/album/AES_0577.JPG.jpeg',
     alt: 'Atmosphere 01',
     caption: 'ARCH // 01',
   },
   {
-    src: '/assets/foto/album/AES_0599.JPG.jpeg', // /assets/foto/album/3.jpeg
+    src: '/assets/foto/album/AES_0599.JPG.jpeg',
     alt: 'Atmosphere 03',
     caption: 'DEV // 03',
   },
   {
-    src: '/assets/foto/album/AES_0578.JPG.jpeg', // /assets/foto/album/2.jpeg
+    src: '/assets/foto/album/AES_0578.JPG.jpeg',
     alt: 'Atmosphere 02',
     caption: 'SYSTEMS // 02',
   },
   {
-    src: '/assets/foto/album/AES_0602.JPG.jpeg', // /assets/foto/album/4.jpeg
+    src: '/assets/foto/album/AES_0602.JPG.jpeg',
     alt: 'Atmosphere 04',
     caption: 'AI & CORE // 04',
   },
@@ -228,6 +228,8 @@ export default function Home() {
               <img
                 src="/assets/foto/mi-foto.jpeg"
                 alt="Marcos Adrian Lopez — Full Stack Developer"
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-auto max-h-[55vh] lg:max-h-[60vh] grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700 ease-out object-cover object-top cursor-pointer"
               />
             </div>
@@ -252,7 +254,7 @@ export default function Home() {
       >
         <div className="mb-8 flex items-center justify-between">
           <span className="text-xs font-mono uppercase tracking-widest text-neutral-500">
-            // 01. Visual Atmosphere & Editorial Frame
+            {'// 01. Visual Atmosphere & Editorial Frame'}
           </span>
           <span className="text-xs font-mono uppercase tracking-widest text-neutral-400">
             [ HOVER TO EXPAND ]
@@ -269,6 +271,8 @@ export default function Home() {
               <img
                 src={photo.src}
                 alt={photo.alt}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-700 ease-out"
               />
               <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -298,7 +302,7 @@ export default function Home() {
         <div className="w-full flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
           <div>
             <span className="text-xs font-mono uppercase tracking-widest text-neutral-500 block mb-2">
-              // 02. Selected Works & Systems
+              {'// 02. Selected Works & Systems'}
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">
               PROYECTOS DESTACADOS
