@@ -9,6 +9,7 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { GallerySection } from './components/GallerySection';
 import { ProjectsSection } from './components/ProjectsSection';
+import { ContactSection } from './components/ContactSection';
 import { FooterSection } from './components/FooterSection';
 
 export default function Home() {
@@ -210,6 +211,7 @@ export default function Home() {
       <HeroSection t={t} />
       <GallerySection t={t} />
       <ProjectsSection t={t} />
+      <ContactSection />
       <FooterSection t={t} />
     </div>
   );

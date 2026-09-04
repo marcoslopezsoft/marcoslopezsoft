@@ -2,7 +2,7 @@ export type Lang = 'es' | 'en';
 export const SUPPORTED_LANGUAGES: Lang[] = ['es', 'en'];
 
 export const CONTACT_INFO = {
-  email: 'marcoslopez.soft@gmail.com',
+  email: 'contacto@marcoslopezsoft.dev',
   phone: '+54 370 511-9756',
   whatsappUrl: 'https://wa.me/543705119756',
   linkedinUrl: 'https://www.linkedin.com/in/marcoslopezsoft',
@@ -38,7 +38,7 @@ export const NAV_ITEMS = [
   { key: 'home', href: '#hero' },
   { key: 'gallery', href: '#gallery' },
   { key: 'projects', href: '#projects' },
-  { key: 'contact', href: '#footer' },
+  { key: 'contact', href: '#contact' },
 ] as const;
 
 export interface GalleryPhoto {
