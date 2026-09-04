@@ -1,4 +1,4 @@
-### Full Stack Developer & Técnico Superior en Desarrollo de Software Multiplataforma
+# Full Stack Developer & Técnico Superior en Desarrollo de Software Multiplataforma
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-ONLINE-000000?style=flat-square&logoColor=white)](https://marcoslopezsoft.github.io/marcoslopezsoft/)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marcoslopezsoft)
