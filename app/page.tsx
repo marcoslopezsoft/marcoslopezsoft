@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLenis } from 'lenis/react';
@@ -225,11 +226,12 @@ export default function Home() {
         <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-6 lg:col-span-5">
             <div className="hero-image group w-full relative overflow-hidden rounded-sm filter blur-sm scale-95 opacity-80">
-              <img
+              <Image
                 src="/assets/foto/mi-foto.jpeg"
                 alt="Marcos Adrian Lopez — Full Stack Developer"
-                fetchPriority="high"
-                decoding="async"
+                width={1024}
+                height={1536}
+                priority
                 className="w-full h-auto max-h-[55vh] lg:max-h-[60vh] grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700 ease-out object-cover object-top cursor-pointer"
               />
             </div>
@@ -268,14 +270,14 @@ export default function Home() {
               key={i}
               className="gallery-item group flex-1 hover:flex-[1.8] h-64 sm:h-80 md:h-[460px] overflow-hidden relative transition-all duration-700 ease-out cursor-pointer"
             >
-              <img
+              <Image
                 src={photo.src}
                 alt={photo.alt}
-                loading="lazy"
-                decoding="async"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-700 ease-out"
               />
-              <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+              <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
                 <span className="text-[10px] font-mono uppercase tracking-widest bg-black/75 text-white px-2.5 py-1">
                   {photo.caption}
                 </span>
