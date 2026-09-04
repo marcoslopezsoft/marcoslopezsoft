@@ -7,6 +7,7 @@ export const CONTACT_INFO = {
   whatsappUrl: 'https://wa.me/543705119756',
   linkedinUrl: 'https://www.linkedin.com/in/marcoslopezsoft',
   githubUrl: 'https://github.com/marcoslopezsoft',
+  location: 'Formosa, Argentina',
 };
 
 export interface SocialLink {
