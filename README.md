@@ -57,6 +57,7 @@ A lo largo de mi trayectoria he liderado el desarrollo integral de soluciones di
 
 ### FormosaHack 2025
 * **Distinción:** 3er Puesto General (Podio)
+* **Enlace / Cobertura Oficial:** [formosa.gob.ar - Nota Oficial](https://www.formosa.gob.ar/noticia/33628/871/formosahack_2025_consagro_a_los_proyectos_mas_innovadores_de_su_segunda_edicion)
 * **Alcance Técnico:** Competencia intensiva de desarrollo de software durante 24 horas continuas ininterrumpidas. Reconocimiento obtenido por arquitectura de backend, tolerancia a fallos y despliegue ágil de MVP funcional.
 
 ---

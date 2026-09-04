@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className="bg-neutral-950 text-neutral-100 antialiased selection:bg-neutral-800">
+      <body className="bg-[#f5f5f5] text-[#3a3a38] antialiased selection:bg-neutral-800 selection:text-white">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
