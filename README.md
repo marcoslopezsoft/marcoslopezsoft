@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marcos Adrián López 🚀
+### Full Stack Developer | EdTech & AI Automations
 
-## Getting Started
+Desarrollador Full Stack y Técnico Superior en Desarrollo de Software Multiplataforma[cite: 1]. Especializado en el diseño de arquitecturas backend escalables, integración de modelos de lenguaje, automatización de flujos y plataformas web enfocadas en rendimiento y conversión digital[cite: 1].
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🛠️ Stack Tecnológico
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Lenguajes & Backend**
+- TypeScript / JavaScript / Python / Node.js / Fastify / Express[cite: 1]
+- Arquitecturas Modulares Monolíticas / RESTful APIs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Frontend & UI**
+- React / Next.js (App Router, SSG) / Tailwind CSS[cite: 1]
+- Lenis Smooth Scroll / GSAP / UI & UX[cite: 1]
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Automatización & IA**
+- n8n / LangChain / Ollama / Gemini API[cite: 1]
+- WhatsApp Bots & Integraciones de soporte automatizado[cite: 1]
 
-## Learn More
+**Infraestructura & DevOps**
+- Docker / NGINX / Linux Hardening / Git & GitHub Actions[cite: 1]
+- Entornos Self-Hosted / Despliegues Estáticos en GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💼 Experiencia & Proyectos Destacados
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **[La Clase Digital](https://laclasedigital.com.ar)**: Diseño web, infraestructura, SEO técnico e integración de bots con IA para atención y soporte automatizado[cite: 1].
+- **[Bienestar Docente](https://bienestardocente.com.ar)**: Plataforma institucional orientada a la interacción comunitaria y conversión[cite: 1].
+- **[Pizarras Digitales](https://pizarrasdigitales.com.ar)**: Catálogo comercial y soluciones tecnológicas interactivas[cite: 1].
+- **FormosaHack 2025**: 🥉 3er puesto en el Ultrahackathon de 24 horas continuas de desarrollo de software[cite: 1].
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🌐 Conecta Conmigo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Portfolio:** [marcoslopezsoft.github.io/marcoslopezsoft](https://marcoslopezsoft.github.io/marcoslopezsoft/)
+- **LinkedIn:** [linkedin.com/in/marcoslopezsoft](https://www.linkedin.com/in/marcoslopezsoft)[cite: 1]
+- **Email:** [marcoslopez.soft@gmail.com](mailto:marcoslopez.soft@gmail.com)[cite: 1]
+- **GitHub:** [github.com/marcoslopezsoft](https://github.com/marcoslopezsoft)
+
+---
