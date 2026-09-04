@@ -29,7 +29,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'WhatsApp',
     href: CONTACT_INFO.whatsappUrl,
-    label: `WhatsApp (${CONTACT_INFO.phone}) ↗`,
+    label: `WhatsApp ↗`,
   },
 ];
 

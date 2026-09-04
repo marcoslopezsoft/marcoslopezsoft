@@ -23,7 +23,7 @@ export function HeroSection({ t }: HeroSectionProps) {
   return (
     <section
       id="hero"
-      className="w-full min-h-screen pt-32 pb-16 px-6 md:px-12 xl:px-20 flex flex-col justify-between"
+      className="w-full min-h-screen pt-28 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 md:px-12 xl:px-20 flex flex-col justify-between"
     >
       {/* Monumental Hero Wordmark - SOFT, WHERE? -> SOFTWARE PROJECTS */}
       <a
@@ -42,7 +42,7 @@ export function HeroSection({ t }: HeroSectionProps) {
                 : 'group-hover:-translate-y-full group-hover:opacity-0'
             }`}
           >
-            <span className="text-[10.5vw] xl:text-[135px] font-black tracking-tighter uppercase text-[#3a3a38] leading-none whitespace-nowrap">
+            <span className="text-[9.5vw] sm:text-[10.5vw] xl:text-[135px] font-black tracking-tighter uppercase text-[#3a3a38] leading-none whitespace-nowrap">
               SOFT, WHERE?
             </span>
           </div>
@@ -55,7 +55,7 @@ export function HeroSection({ t }: HeroSectionProps) {
                 : 'translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100'
             }`}
           >
-            <span className="text-[8.5vw] xl:text-[112px] font-black tracking-tighter uppercase text-[#3a3a38] leading-none whitespace-nowrap flex items-center gap-2 sm:gap-4">
+            <span className="text-[7.6vw] sm:text-[8.5vw] xl:text-[112px] font-black tracking-tighter uppercase text-[#3a3a38] leading-none whitespace-nowrap flex items-center gap-1.5 sm:gap-4">
               SOFTWARE <span className="text-[#ffd700]">PROJECTS</span>
             </span>
           </div>
@@ -63,7 +63,7 @@ export function HeroSection({ t }: HeroSectionProps) {
       </a>
 
       {/* Content row - Ancho completo de borde a borde */}
-      <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+      <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-end">
         <div className="md:col-span-6 lg:col-span-5">
           <div className="hero-image group w-full relative overflow-hidden rounded-sm filter blur-sm scale-95 opacity-80">
             <Image

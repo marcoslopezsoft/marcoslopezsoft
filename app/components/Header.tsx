@@ -1,6 +1,6 @@
 'use client';
 
-import React, { RefObject } from 'react';
+import React, { RefObject, useState } from 'react';
 import {
   CONTACT_INFO,
   ContentData,
@@ -24,26 +24,31 @@ export function Header({
   onLanguageChange,
   t,
 }: HeaderProps) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <header
       ref={headerRef}
-      className="fixed top-0 left-0 w-full z-50 py-5 px-6 md:px-12 xl:px-20 backdrop-blur-[8px] border-b border-transparent transition-colors duration-300"
+      className="fixed top-0 left-0 w-full z-50 py-3.5 sm:py-5 px-4 sm:px-6 md:px-12 xl:px-20 backdrop-blur-[8px] border-b border-transparent transition-colors duration-300"
     >
-      <div className="w-full flex items-center justify-between">
-        <div className="text-xl md:text-2xl font-bold tracking-tighter text-current">
+      <div className="w-full flex items-center justify-between gap-2">
+        <a
+          href="#hero"
+          className="text-base sm:text-xl md:text-2xl font-bold tracking-tighter text-current shrink-0 hover:opacity-80 transition-opacity"
+        >
           MARCOSLOPEZSOFT
-        </div>
+        </a>
 
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <a
             href={`mailto:${CONTACT_INFO.email}`}
-            className="px-3 sm:px-4 py-1.5 text-xs font-mono uppercase tracking-wider transition-all duration-300 border border-current/30 text-current hover:bg-[#ffd700] hover:text-black hover:border-[#ffd700]"
+            className="px-2.5 sm:px-4 py-1 sm:py-1.5 text-[10px] sm:text-xs font-mono uppercase tracking-wider transition-all duration-300 border border-current/30 text-current hover:bg-[#ffd700] hover:text-black hover:border-[#ffd700] shrink-0"
           >
             {t.cta}
           </a>
 
           {/* Language Switcher - DRY mapped */}
-          <div className="flex items-center border border-current/30 font-mono text-[11px] uppercase tracking-wider overflow-hidden">
+          <div className="flex items-center border border-current/30 font-mono text-[10px] sm:text-[11px] uppercase tracking-wider overflow-hidden">
             {SUPPORTED_LANGUAGES.map((l) => {
               const isActive = lang === l;
               return (
@@ -51,7 +56,7 @@ export function Header({
                   key={l}
                   type="button"
                   onClick={() => onLanguageChange(l)}
-                  className={`px-2 py-1 transition-colors ${
+                  className={`px-1.5 sm:px-2 py-0.5 sm:py-1 transition-colors ${
                     isActive
                       ? 'bg-[#ffd700] text-black font-bold'
                       : 'bg-transparent text-current hover:bg-current/10'
@@ -66,6 +71,17 @@ export function Header({
             })}
           </div>
 
+          {/* Mobile Menu Toggle Button */}
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            className="sm:hidden px-2 py-1 text-[11px] font-mono border border-current/30 text-current hover:border-[#ffd700] hover:text-[#ffd700] transition-colors"
+            aria-label="Abrir menú de navegación"
+            aria-expanded={isMobileMenuOpen}
+          >
+            {isMobileMenuOpen ? '[X]' : '[MENU]'}
+          </button>
+
           {/* Scroll Indicator */}
           <div className="hidden sm:block w-28 sm:w-44 md:w-56 h-[2px] bg-current/20">
             <div
@@ -75,7 +91,7 @@ export function Header({
           </div>
         </div>
 
-        {/* Navigation links - DRY mapped */}
+        {/* Desktop Navigation links - DRY mapped */}
         <nav className="hidden sm:flex gap-8 text-sm lowercase font-medium">
           {NAV_ITEMS.map(({ key, href }) => (
             <a
@@ -88,6 +104,25 @@ export function Header({
           ))}
         </nav>
       </div>
+
+      {/* Mobile Navigation Dropdown */}
+      {isMobileMenuOpen && (
+        <nav className="sm:hidden mt-3 pt-3 border-t border-current/15 flex flex-col gap-3 font-mono text-xs uppercase tracking-wider pb-1">
+          {NAV_ITEMS.map(({ key, href }, index) => (
+            <a
+              key={key}
+              href={href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-current/80 hover:text-[#ffd700] transition-colors py-1 flex items-center justify-between"
+            >
+              <span>{t.nav[key]}</span>
+              <span className="text-[10px] text-[#ffd700]">
+                0{index + 1} {'//'} ↗
+              </span>
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }

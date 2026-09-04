@@ -17,7 +17,7 @@ export function ProjectCard({ item, index, visitText }: ProjectCardProps) {
       href={item.href}
       target="_blank"
       rel="noopener noreferrer"
-      className="project-card relative block p-6 sm:p-8 md:p-10 rounded-lg border border-white/10 bg-white/2 backdrop-blur-[3px] transition-all duration-500 hover:border-[#ffd700]/60 hover:bg-white/5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.6)] group overflow-hidden cursor-pointer"
+      className="project-card relative block p-5 sm:p-8 md:p-10 rounded-lg border border-white/10 bg-white/2 backdrop-blur-[3px] transition-all duration-500 hover:border-[#ffd700]/60 hover:bg-white/5 hover:shadow-[0_10px_40px_rgba(0,0,0,0.6)] group overflow-hidden cursor-pointer"
     >
       {/* Línea superior dorada que se expande en hover */}
       <div className="absolute top-0 left-0 w-0 h-0.5 bg-linear-to-r from-[#ffd700] via-amber-300 to-[#ffd700] group-hover:w-full transition-all duration-700 ease-out" />
@@ -50,26 +50,26 @@ export function ProjectCard({ item, index, visitText }: ProjectCardProps) {
 
         {/* Título y Flecha */}
         <div className="flex items-baseline justify-between gap-4">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white group-hover:text-[#ffd700] group-hover:translate-x-1 transition-all duration-300">
+          <h3 className="text-xl sm:text-2xl md:text-4xl font-bold tracking-tight text-white group-hover:text-[#ffd700] group-hover:translate-x-1 transition-all duration-300">
             {item.title}
           </h3>
-          <span className="text-xl sm:text-2xl font-mono text-neutral-500 group-hover:text-[#ffd700] group-hover:translate-x-2 group-hover:-translate-y-1 transition-all duration-300">
+          <span className="text-lg sm:text-2xl font-mono text-neutral-500 group-hover:text-[#ffd700] group-hover:translate-x-2 group-hover:-translate-y-1 transition-all duration-300">
             ↗
           </span>
         </div>
 
         {/* Descripción Técnica */}
-        <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed max-w-3xl group-hover:text-neutral-200 transition-colors">
+        <p className="text-xs sm:text-base text-neutral-400 font-light leading-relaxed max-w-3xl group-hover:text-neutral-200 transition-colors">
           {item.description}
         </p>
 
         {/* Tags de Tecnologías y CTA */}
-        <div className="pt-2 flex flex-wrap items-center justify-between gap-4 border-t border-white/5">
-          <div className="flex flex-wrap gap-2">
+        <div className="pt-2 flex flex-wrap items-center justify-between gap-3 sm:gap-4 border-t border-white/5">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {item.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-[11px] font-mono tracking-wider px-2.5 py-1 rounded bg-white/3 border border-white/5 text-neutral-400 group-hover:border-white/15 group-hover:text-neutral-300 transition-colors"
+                className="text-[10px] sm:text-[11px] font-mono tracking-wider px-2 sm:px-2.5 py-0.5 sm:py-1 rounded bg-white/3 border border-white/5 text-neutral-400 group-hover:border-white/15 group-hover:text-neutral-300 transition-colors"
               >
                 #{tag}
               </span>

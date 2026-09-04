@@ -12,9 +12,9 @@ export function GallerySection({ t }: GallerySectionProps) {
   return (
     <section
       id="gallery"
-      className="w-full min-h-screen py-28 px-6 md:px-12 xl:px-20 flex flex-col justify-center border-t border-neutral-300/40"
+      className="w-full min-h-screen py-20 sm:py-28 px-4 sm:px-6 md:px-12 xl:px-20 flex flex-col justify-center border-t border-neutral-300/40"
     >
-      <div className="mb-8 flex items-center justify-between">
+      <div className="mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0">
         <span className="text-xs font-mono uppercase tracking-widest text-neutral-500">
           {t.gallery.tag}
         </span>
