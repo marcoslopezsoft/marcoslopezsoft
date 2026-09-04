@@ -1,4 +1,3 @@
-# MARCOS ADRIÁN LÓPEZ // MARCOSLOPEZSOFT
 ### Full Stack Developer & Técnico Superior en Desarrollo de Software Multiplataforma
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-ONLINE-000000?style=flat-square&logoColor=white)](https://marcoslopezsoft.github.io/marcoslopezsoft/)
